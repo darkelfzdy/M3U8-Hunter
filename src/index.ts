@@ -43,7 +43,7 @@ app.post('/api/get-m3u8', async (c) => {
 
         if (!m3u8Url) {
             console.log('M3U8 not found on initial load. Trying to interact...');
-            const videoSelectors = ['video', '.video-player', '#player', '.player', '.play-button', '[class*="play"]'];
+            const videoSelectors = ['video', '.video-player', '#player', '.player', '.play-button', 'div[class*="play"]'];
             await page.evaluate((selectors) => {
                 for (const selector of selectors) {
                     const el = document.querySelector(selector) as HTMLElement;
