@@ -9,10 +9,10 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250625.0",
     "typescript": "^5.0.4",
-    "wrangler": "^3.64.0"
+    "wrangler": "^4.26.0"
   },
   "dependencies": {
-    "@cloudflare/puppeteer": "^0.0.6",
+    "@cloudflare/puppeteer": "^1.0.4",
     "hono": "^4.5.1"
   }
 }
