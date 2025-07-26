@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3U8 Hunter</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>M3U8 Hunter</h1>
+        <p>输入包含视频的网页 URL，获取 M3U8 链接。</p>
+        <div class="input-group">
+            <input type="url" id="webUrlInput" placeholder="https://example.com/video/page" required>
+            <button id="getLinkBtn">获取链接</button>
+        </div>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="resultArea"></div>
+        <div id="errorArea"></div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
