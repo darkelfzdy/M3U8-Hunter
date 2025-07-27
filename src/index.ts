@@ -36,7 +36,7 @@ app.post('/api/get-m3u8', async (c) => {
         await page.setUserAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Mobile/15E148 Safari/604.1');
         await page.setViewport({ width: 390, height: 844, isMobile: true });
 
-        await page.goto(web_url, { waitUntil: 'networkidle0', timeout: 25000 });
+        await page.goto(web_url, { waitUntil: 'networkidle2', timeout: 55000 });
 
         let videoTitle = await page.title();
         videoTitle = videoTitle.replace(/[\\/:*?"<>|]/g, '_');
